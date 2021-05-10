@@ -1,0 +1,28 @@
+<form #frmval="ngForm" name="myForm" (ngSubmit)="editData(frmval.value)">
+    <h2 style="text-align: center;">Change Scheme</h2>
+    <table class="cls1">
+
+        <div class="form-group"></div>
+        <tr>
+            <td><Label>Status:</Label><br> </td>
+            <td></td>
+            <td><input type="radio" name="status" value="Active" [ngModel]="custObj?.status">Active<br></td>
+            <td> <input type="radio" name="status" value="Inactive" [ngModel]="custObj?.status">Inactive<br></td>
+            <td> <input type="radio" name="status" value="Closed" [ngModel]="custObj?.status">Closed<br></td>
+        </tr>
+        <br>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </td>
+    </tr>
+        
+
+    </table>
+    
+
+</form>
